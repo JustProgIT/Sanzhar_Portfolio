@@ -1,0 +1,34 @@
+#skills {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#skills_main_text {
+  color: #cb6ce6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  z-index: 2;
+}
+
+.skill_text {
+  position: absolute;
+  font-size: 14px;
+  color: white;
+  z-index: 1;
+  animation: float 8s infinite ease-in-out alternate;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-20px) rotate(5deg);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,131 @@
+#projects {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#project_link {
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #24292e;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+#project_main_text {
+  color: #41b2b6;
+  margin-bottom: 40px;
+}
+
+.project_slider {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.project_image {
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.project_main {
+  width: 500px;
+  height: 500px;
+  z-index: 3;
+}
+
+.project_side {
+  width: 250px;
+  height: 250px;
+  opacity: 0.5;
+  filter: brightness(50%);
+  z-index: 2;
+}
+
+.project_arrows {
+  width: 120px;
+  cursor: pointer;
+}
+
+#project_title {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+#project_hp_image {
+  width: 600px;
+  margin-top: 30px;
+}
+.stat_popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  font-family: "Press Start 2P", system-ui;
+  color: #00ff00;
+  opacity: 1;
+  animation: popUpFade 1.5s ease-out forwards;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.stat_popup.negative {
+  color: #ff3131;
+}
+
+.project_overlay {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.project_overlay_text {
+  color: #ffffff;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+}
+
+.project_main:hover + .project_overlay {
+  opacity: 1;
+}
+
+.project_main:hover {
+  filter: brightness(50%);
+}
+
+@keyframes popUpFade {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -120%) scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -200%) scale(1);
+    opacity: 0;
+  }
+}

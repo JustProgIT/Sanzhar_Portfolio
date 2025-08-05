@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sanzhar Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/about_me.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <style></style>
+</head>
+<body>
+    <div id="header">
+        <img id="pacman" src="images/pacman.gif" alt="Pacman" style="display:none;">
+        <img id="header_ghost" src="images/ghosts.gif" alt="ghost gif">
+        <h1 id="header_main_text">SANZHAR PORTFOLIO</h1>
+        <section id="header_nav_section">
+            <a href="#about_me">
+                <button class="header_nav_buttons" style="background-color: #ff3131;">About Me</button>
+            </a>
+            <a href="#skills">
+                <button class="header_nav_buttons" style="background-color: #cb6ce6;">Skills</button>
+            </a>
+            <a href="#projects">
+                <button class="header_nav_buttons" style="background-color: #41b2b6;">Projects</button>
+            </a>
+            <a href="#contact">
+                <button class="header_nav_buttons" style="background-color: #ff914d;">Contact</button>
+            </a>
+        </section>
+    </div>
+    <div id="about_me">
+        <h1 id="about_me_main_text">ABOUT ME</h1>
+        <div id="about_me_content">
+            <div id="about_me_left">
+                <p>
+                    My name is Sanzhar!<br>
+                    I am 19 y.o.<br>
+                    I am currently studying<br>
+                    Bachelor of Software Engineering<br>
+                    in Sunway University,<br>
+                    year 1 semester 3.
+                </p>
+                <br>
+                <p><strong>Hobbies:</strong></p>
+                <ul>
+                    <li>Coding</li>
+                    <li>Game Development</li>
+                    <li>Swimming</li>
+                    <li>Calisthenics</li>
+                    <li>Volleyball</li>
+                </ul>
+            </div>
+            <div id="about_me_right">
+                <img id="about_me_image_slider" src="images/sanzhar1.png" alt="Sanzhar Picture 1">
+            </div>
+        </div>
+    </div>
+    <!--Try clicking on skills in the website-->
+    <div id="skills">
+        <h1 id="skills_main_text">SKILLS</h1>
+        <p id="skills_instruction">Score: 0</p>
+        <span class="skill_text" style="top: 10%; left: 20%; color: #00bf63;">Python</span>
+        <span class="skill_text" style="top: 70%; left: 30%; color: #ff0000;">C#</span>
+        <span class="skill_text" style="top: 30%; left: 84%; color: #a6a6a6;">STM32</span>
+        <span class="skill_text" style="top: 68%; left: 54%; color: #7d3153;">.NET</span>
+        <span class="skill_text" style="top: 15%; left: 60%; color: #FFFFFF;">COMPUTER NETWORKING</span>
+        <span class="skill_text" style="top: 85%; left: 35%; color: #ff8a00;">GODOT</span>
+        <span class="skill_text" style="top: 40%; left: 10%; color: #8ce0ff;">UNITY</span>
+        <span class="skill_text" style="top: 25%; left: 45%; color: #ffd4a7;">WEB DEVELOPMENT</span>
+        <span class="skill_text" style="top: 80%; left: 70%; color: #0097b2;">ELECTRICAL ENGINEERING</span>
+        <span class="skill_text" style="top: 20%; left: 5%; color: #0c0096;">ARDUINO</span>
+        <span class="skill_text" style="top: 55%; left: 90%; color: #6ff66c;">MYSQL</span>
+        <span class="skill_text" style="top: 35%; left: 30%; color: #844242;">OPENCV</span>
+        <span class="skill_text" style="top: 65%; left: 10%; color: #ffde59;">3D MODELING</span>
+        <span class="skill_text" style="top: 43%; left: 75%; color: #f836ce;">LINUX</span>
+    </div>
+    <div id="projects">
+        <h1 id="project_main_text">PROJECTS</h1>
+        <div class="project_slider">
+            <img src="images/left_arrow.svg" alt="left_arrow" class="project_arrows" onclick="prevProject()">
+
+            <div class="project_image_wrapper">
+                <img id="left_project" src="" alt="left_project" class="project_image project_side">
+            </div>
+
+            <div class="project_image_wrapper main_wrapper">
+                <img id="main_project" src="" alt="main_project" class="project_image project_main">
+            <div class="project_overlay">
+                <p id="project_overlay_text" class="project_overlay_text">Description here</p>
+            </div>
+            </div>
+
+            <div class="project_image_wrapper">
+                <img id="right_project" src="" alt="right_project" class="project_image project_side">
+            </div>
+
+            <img src="images/right_arrow.svg" alt="right_arrow" class="project_arrows" onclick="nextProject()">
+        </div>
+        <a id="project_link" href="#" target="_blank" style="display:none;">View on GitHub</a>
+
+        <p id="project_title">Project Title</p>
+        <img src="images/hp_0.svg" alt="hp_image" id="project_hp_image">
+    </div>
+
+
+    <div id="contact">
+        <h1 id="contact_main_text">CONTACT ME</h1>
+        <div class="contact_left">
+            <p>Name</p>
+            <input type="text" class="contact_input">
+            <p>Email</p>
+            <input type="email" class="contact_input" id="email_input">
+            <p>Message</p>
+            <textarea class="contact_input" style="height:100px;"></textarea>
+            <div class="contact_hearts_row">
+                <img src="images/heart_no.svg" alt="heart_no" class="contact_hearts_img">
+                <img src="images/heart_no.svg" alt="heart_no" class="contact_hearts_img">
+                <img src="images/heart_no.svg" alt="heart_no" class="contact_hearts_img">
+            </div>
+        </div>
+        <div class="contact_right">
+            <div>
+                <img src="images/mail.png" alt="mail" class="contact_social_media_img">
+                <p>sanzarkuatov@gmail.com</p>
+            </div>
+            <div>
+                <img src="images/ig_round.png" alt="instagram" class="contact_social_media_img">
+                <p>@sanzhar_kuat</p>
+            </div>
+            <div>
+                <img src="images/linkedin_round.png" alt="linkedin" class="contact_social_media_img">
+                <p>@sanzhar_kuat</p>
+            </div>
+            <div>
+                <img src="images/github.png" alt="github" class="contact_social_media_img">
+                <p>@JustProgIT</p>
+            </div>
+        </div>
+    </div>
+
+    <button id="toTopBtn" onclick="scrollToTop()">↑ TOP</button>
+
+    <audio id="pewSound" src="images/pew.mp3"></audio>
+
+    <script src="scripts/me_slider.js"></script>
+    <script src="scripts/skills_explosion.js"></script>
+    <script src="scripts/pacman.js"></script>
+    <script src="scripts/to_top_btn.js"></script>
+    <script src="scripts/contact_hearts.js"></script>
+    <script src="scripts/project_hp.js"></script>
+</body>
+</html>

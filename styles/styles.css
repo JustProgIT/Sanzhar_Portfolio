@@ -1,0 +1,68 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: "Press Start 2P", system-ui;
+}
+
+#toTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  background-color: #ff914d;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+#toTopBtn.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#toTopBtn:hover {
+  background-color: #ff7030;
+}
+#toTopBtn.red {
+  background-color: #ff3131;
+}
+#toTopBtn.purple {
+  background-color: #cb6ce6;
+}
+#toTopBtn.cyan {
+  background-color: #41b2b6;
+}
+#toTopBtn.orange {
+  background-color: #ff914d;
+}
+
+#pacman {
+  position: absolute;
+  left: -100px;
+  width: 90px;
+  z-index: 999;
+  transition: none;
+}
+#skills_instruction {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  z-index: 3;
+}

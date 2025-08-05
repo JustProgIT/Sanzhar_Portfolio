@@ -1,0 +1,32 @@
+#about_me {
+  padding: 80px 50px;
+}
+
+#about_me_main_text {
+  color: #ff3131;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#about_me_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+#about_me_left,
+#about_me_right {
+  flex: 1;
+  max-width: 500px;
+}
+
+#about_me_left {
+  font-size: 16px;
+  line-height: 2;
+  padding-left: 50px;
+}
+#about_me_image_slider {
+  height: 550px;
+}

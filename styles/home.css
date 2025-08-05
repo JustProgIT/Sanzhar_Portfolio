@@ -1,0 +1,34 @@
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#header_ghost {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+#header_main_text {
+  text-align: center;
+  margin: 10px 0 40px 0;
+}
+
+#header_nav_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.header_nav_buttons {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
