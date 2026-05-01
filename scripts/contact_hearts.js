@@ -51,7 +51,7 @@ function showSubmitButton() {
         if (!validateEmail(emailInput.value)) {
             alert("Please enter a valid email address.");
         } else {
-            alert("Message sent!");
+            alert("This doesn't work! Sorry for this! Please contact me using my details on the right. Thanks");
         }
     });
 }
